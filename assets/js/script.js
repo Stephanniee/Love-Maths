@@ -19,7 +19,11 @@ for (let button of buttons){
 }
 });
 
-function runGame(){}
+// creating to random number between 1 and 25 (floor rounds down)
+function runGame(){
+    let num1=Math.floor(Math.random()* 25) + 1;
+    let num2=Math.floor(Math.random()* 25) + 1;
+}
 
 
 function checkAnswer(){}
