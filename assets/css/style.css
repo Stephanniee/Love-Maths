@@ -110,6 +110,7 @@ body {
     margin: 0 30px;
     transition: all 0.5s;
 }
+
 /*inset content after an element*/
 .btn--big::after {
     /*to read the attribute (attr) data type */
