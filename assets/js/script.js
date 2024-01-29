@@ -18,27 +18,37 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+    // If the enter key is pressed it call the check answer funtion 
+    document.getElementById("answer-box").addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            checkAnswer();
+        }
+    })
 
     runGame("addition")
 });
 
-// creating to random number between 1 and 25 (floor rounds down)
+
 function runGame(gameType) {
+    // empties the anwser box and adds cursor
+    document.getElementById("answer-box").value = "";
+    document.getElementsById("answer-box").focus();
+    // creating to random number between 1 and 25 (floor rounds down)
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
 
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
-    } else if (gameType === "multiply"){
+    } else if (gameType === "multiply") {
         displayMultiplyQuestion(num1, num2);
-    } else if (gameType === "subtract"){
+    } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
-    }else {
+    } else {
         alert(`unknown game type: ${gameType}`);
         throw `unknown game type: ${gameType}. Aborting!`;
     }
 
-    
+
 
 }
 
@@ -77,9 +87,9 @@ function calculateCorrectAnswer() {
 
     if (operator === "+") {
         return [operand1 + operand2, "addition"];
-    } else if (operator === "x"){
+    } else if (operator === "x") {
         return [operand1 * operand2, "multiply"];
-    } else if (operator === "-"){
+    } else if (operator === "-") {
         return [operand1 - operand2, "subtract"];
     } else {
         alert(`Unimplemented operator ${operator}`);
@@ -93,14 +103,14 @@ function calculateCorrectAnswer() {
 function incrementScore() {
     let oldScore = parseInt(document.getElementById("score").innerText)
     document.getElementById("score").innerText = ++oldScore;
- }
+}
 
 /**
  * Gets the incorrect score from Dom and increase it by 1
  */
 function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText)
-    document.getElementById("incorrect").innerText = ++oldScore; 
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 
@@ -112,7 +122,7 @@ function displayAdditionQuestion(operand1, operand2) {
 }
 
 
-function displaySubtractQuestion(operand1, operand2) { 
+function displaySubtractQuestion(operand1, operand2) {
     document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
     document.getElementById('operand2').textContent = operand1 > operand2 ? operand1 : operand1;
     document.getElementById('operator').textContent = "-";
