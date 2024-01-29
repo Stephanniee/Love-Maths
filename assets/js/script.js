@@ -144,7 +144,7 @@ function displayMultiplyQuestion(operand1, operand2) {
 
 
 function displayDivisionQuestion(operand1, operand2) {
-    // by multiplying the op1 and op 2 allows the op1 to be a higher number than op 2
+    // By multiplying the op1 and op2 allows the op1 to be a higher number than op2 so it will returen whole numbers.
     document.getElementById('operand1').textContent = operand1 * operand2;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "/";
