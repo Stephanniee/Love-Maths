@@ -1,6 +1,7 @@
 # Love Maths Game
 
 Love Maths is an interactive web application designed to enhance mathematical skills while providing an enjoyable gaming experience. Players can challenge themselves with random math problems.
+![Uploading image.png…]()
 
 ## Features:
 
