@@ -1,39 +1,32 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## Love Maths Game
 
-Welcome,
+Love Maths is an interactive web application designed to enhance mathematical skills while providing an enjoyable gaming experience. Players can challenge themselves with random math problems.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Features:
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+1. Engaging gameplay with different mathematical operations.
+2. Real-time feedback on correct and incorrect answers.
+3. Responsive design.
 
-## Codeanywhere Reminders
+# Getting Started:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+1. Open the Love Maths web application in your preferred web browser.
+2. Choose a game mode (addition, subtraction, multiplication, or division).
+3. Solve the math problems presented on the screen.
+4. Track your score and aim to improve with each session.
+   
+# UX User Stories:
+As a user, I want a fun and interactive way to practice math skills.
+As a user, I want a platform that offers various game modes to challenge myself and improve my math proficiency.
+As a user, I want an educational tool that keeps me engaged.
 
-`python3 -m http.server`
+# Testing:
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+Thorough testing conducted to ensure error-free functionality.
+Utilized validator testing tools to identify and address potential issues.
+Responsive testing performed to ensure compatibility across various screen sizes and devices.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+# Deployment:
 
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+Deployed the Love Maths project using GitHub Pages for easy access and sharing.
+Followed the necessary steps to set up deployment and ensure smooth execution.
